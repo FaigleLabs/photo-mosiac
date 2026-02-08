@@ -1,0 +1,22 @@
+Goals: Provide a powerful and elegant photo-mosaic application in python that
+	1. Takes one source image and a set of tile images and creates a photo-mosaic from them of the first image
+	2. Has the following controls:
+		A. Tile image directories - specify one ore more replace image directories
+		B. Output size and format
+		C. A set of replacement strategies - TDB by best recommendation
+		D. Controls for tile size used - i.e. 16x16 etc.
+		E. How tile images are converted to tiles for comparison (I.e. if the all end up square for tile replacement, then how do images become square - stretch, fill, etc etc.
+		F. Other controls that you think would make this great
+	3. Performs global optimizations
+		A. Don't repeat / repeat max times
+		B. Max percent of image (i.e. one tile can be no more that 1% of the tiles used)
+		C. Ensures a globally optimal placement of images:
+			i. Lazy strategy - perhaps with a control over how much laziness
+			ii. Random strategy - perhaps with a control over ho random
+			iii. Full optimize - perhaps with a max depth or max something parameter so this won't run forever
+	4. Performs caching and pooling and multithreading if necessary
+	5. Has both a command line and application interface and both are fully capable	
+	6. Title: Photo Mosaic - Free [FaigleLabs]
+	7. Other goals that would make this great - I was thinking hexagonal tiles also - lmk
+
+Please make a plan
